@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Categories</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .category-item img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+      .category-item {
+        cursor: pointer;
+      }
+      .img-grid img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-gray justify-content-between mb-3" style="background-color: #3538e3;">
+      <a class="navbar-brand"><b>HOA QUẢ</b></a>
+      <form class="form-inline">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Hoa quả ..."
+          aria-label="Tìm kiếm"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Tìm kiếm
+        </button>
+      </form>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <ul id="category-list" class="list-group">
+            <!-- Danh sách loại sẽ được hiển thị ở đây -->
+          </ul>
+        </div>
+        <div class="col-md-9">
+          <div id="image-gallery" class="row img-grid">
+            <!-- Hình ảnh sẽ được hiển thị ở đây -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
